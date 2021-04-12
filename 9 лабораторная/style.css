@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+}
+.header {
+    width: 100%;
+    height: max-content;
+    background-color: #161616;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header>* {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.header__text {
+    text-transform: uppercase;
+    font-size: 27px;
+}
+
+.logo {
+    border: white 1px solid;
+    width: max-content;
+    padding: 7px 22px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-right: 60px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.menu-item {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.address {
+    font-size: 14px;
+}
+
+.header__purchase {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.5;
+    width: 30%;
+}
+
+.header__buy {
+    background-color: #FFE500;
+    color: #161616;
+    padding: 15px 30px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    border: none;
+}
+
+.header__purchase-and-picture {
+    width: 80%;
+    height: max-content;
+    display: flex;
+    margin-top: 5%;
+    align-items: flex-start;
+}
+
+.header__train {
+    width: 55%;
+    position: absolute;
+    right: 0px;
+}
+
+.header__arrows {
+    margin-top: 7%;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    right: 200px;
+}
+
+.what-we-can {
+    background-color: #F1F2F5;
+    padding-bottom: 50px;
+}
+
+.title {
+    color: black;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.what-we-can__columns {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.what-we-can__rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.what-we-can__item {
+    background-color: #FFFFFF;
+    width: min-content;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: 0.4s linear;
+    page-break-inside: avoid;
+}
+
+.what-we-can__picture {
+    width: auto;
+}
+
+.what-we-can__item:hover {
+    transform: translateY(-50px);
+}
+
+.what-we-can__sign {
+    margin: 40px;
+    width: 80%;
+    color: #161616;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.what-we-can__map-icon {
+    width: 30px;
+    background-color: #FFE500;
+    position: absolute;
+    padding: 10px;
+}
+
+.our-advantages {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.our-advantages__advantages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2%;
+    grid-row-end: auto;
+    justify-content: space-around;
+}
+
+.our-advantages__element {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    width: max-content;
+    max-width: 350px;
+    padding-bottom: 30px;
+}
+
+.our-advantages__yellow-block {
+    background-color: #FFE500;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.our-advantages__num {
+    position: relative;
+    z-index: 1;
+    font-size: 80px;
+    color: #000000;
+    opacity: 0.03;
+    bottom: 50%;
+    right: 55%;
+}
+
+.our-advantages__description {
+    padding-left: 40px;
+}
+
+.map {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.map__picture {
+    width: 100%;
+}
+
+.arenda-zemli {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.arenda-zemli__mobile-picture {
+    display: none;
+}
+
+.arenda-zemli__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-right: 15%;
+}
+
+.text-description {
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.text-header {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.consultation {
+    background-color: #161616;
+    color: #FFFFFF;
+    padding: 20px 30px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: none;
+}
+
+.arenda-zemli__pictures {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.arenda-zemli__grey-rectangle {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    z-index: 1;
+}
+
+.arenda-zemli__zemlya {
+    position: relative;
+    z-index: 2;
+}
+
+.arenda-skladov__text {
+    width: 60%;
+}
+
+.text-header_white,
+.text-description_white {
+    color: white;
+}
+
+.arenda-skladov {
+    background-color: #161616;
+    display: flex;
+    height: max-content;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+.arenda-skladov__mobile-picture {
+    display: none;
+}
+
+.arenda-skladov__content {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.consultation_white-border {
+    border: white 1px solid;
+}
+
+.arenda-skladov__picture {
+    position: relative;
+    top: 100px;
+    width: 50%;
+    height: min-content;
+}
+
+.send-contacts {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.send-contacts__form {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.send-contacts__field {
+    background-color: #EFF0F1;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    width: 80%;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #161616;
+    color: white;
+}
+
+.footer__content {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.mobile-opened-menu {
+    background-color: #161616;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    font-size: 2em;
+    color: #FFFFFF;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_opened {
+    margin-top: 10%;
+    height: 60%;
+    gap: 3rem;
+}
+
+.mobile-opened-menu__exit {
+    float: right;
+}
+
+.send-contacts__form__block{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    width: 95%;
+    text-align: center;
+}
+:focus {
+    outline-width: 8px;
+    outline-color: yellowgreen;
+    font-weight: bold;
+}
+
+.header__mobile-menu {
+    display: none;
+}
+
+@media (max-width: 1500px) {
+    .footer__content {
+        width: 80%;
+    }
+
+    .header>* {
+        width: 80%;
+    }
+
+    .send-contacts__form {
+        width: 100%;
+    }
+
+    .what-we-can__columns {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .what-we-can__rows {
+        flex-direction: column;
+    }
+
+    .our-advantages__num {
+        display: none;
+    }
+
+    .footer__content {
+        width: 90%;
+    }
+
+    .header {
+        background-image: linear-gradient(rgba(63, 63, 63, 0.8), rgba(0, 0, 0, 0.5)), url(img/train.png);
+        background-position: 50% 40%;
+        background-repeat: no-repeat;
+    }
+
+    .header__head {
+        width: 95%;
+    }
+
+    .header__purchase {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .header__text {
+        width: 300%;
+    }
+
+    .header__train {
+        display: none;
+    }
+
+    .arenda-skladov__picture {
+        display: none;
+    }
+
+    .arenda-zemli__pictures {
+        display: none;
+    }
+
+    .arenda-skladov__text {
+        width: 95%;
+    }
+
+    .send-contacts__form {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .consultation,
+    .send-contacts__field {
+        width: 95%;
+    }
+
+    .menu-item_header,
+    .address,
+    .menu-item_phone {
+        display: none;
+    }
+
+    .header__arrows {
+        text-align: end;
+        right: 0;
+    }
+
+    .title {
+        padding-top: 10%;
+    }
+
+    .arenda-zemli,
+    .arenda-zemli__text {
+        width: 95%;
+        padding-right: 0;
+    }
+
+    .arenda-zemli__form {
+        width: 90%;
+    }
+
+    .menu_mobile-v {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .menu-item {
+        font-size: 14px;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .arenda-zemli,
+    .arenda-skladov {
+        flex-direction: column;
+    }
+
+    .arenda-zemli__text,
+    .arenda-skladov__content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .arenda-zemli__mobile-picture {
+        display: block;
+        width: 95%;
+        margin-bottom: 5%;
+    }
+
+    .arenda-skladov__mobile-picture {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+        bottom: 1.5em;
+    }
+
+    .header__mobile-menu {
+        display: block;
+    }
+}
+
+@media print {
+    @page {
+        margin: 2cm, 1cm, 2cm, 3cm;
+    }
+
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    p:first-line,
+    div:first-line,
+    blockquote:first-line,
+    li:first-line {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    /* a[href]:after {
+        content: " ("attr(href) ")";
+    } */
+
+    .map {
+        break-inside: avoid;
+    }
+
+    .what-we-can {
+        text-align: center;
+    }
+
+    .what-we-can__item {
+        break-inside: avoid;
+        margin: 0 auto;
+        text-align: center;
+        page-break-before: avoid;
+        page-break-after: avoid;
+        page-break-inside: avoid;
+        display: block;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .what-we-can__picture {
+        width: 70%;
+        border: #000 2px solid;
+    }
+
+    .what-we-can__rows,
+    .what-we-can__columns {
+        display: block;
+    }
+
+    .what-we-can__sign {
+        margin: 0 auto;
+    }
+
+    .our-advantages__element {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .arenda-skladov__mobile-picture,
+    .arenda-zemli__mobile-picture {
+        max-width: 52%;
+        border: #000 2px solid;
+    }
+
+    .our-advantages {
+        page-break-before: always;
+    }
+
+    .header__form,
+    .send-contacts,
+    .footer,
+    .consultation,
+    .what-we-can__map-icon {
+        display: none;
+    }
+}
