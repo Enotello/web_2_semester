@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Veles</title>
+    <script>
+        function openMenu() {
+            document.getElementById("mobile-opened-menu").style.display = "flex";
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeMenu() {
+            document.getElementById("mobile-opened-menu").style.display = "none";
+            document.body.style.overflow = "visible";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="mobile-opened-menu" class="mobile-opened-menu">
+        <div class="menu__top-container">
+            <div class="logo">VELES</div>
+            <div class="mobile-opened-menu__exit" onclick="closeMenu()"><svg width="27" height="27" viewBox="0 0 27 27"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26 26L1 1M1 26L26 1L1 26Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+        <nav class="menu menu_mobile-v menu_opened">
+            <a class="menu-item" href="">ЗЕМЛЯ</a>
+            <a class="menu-item" href="">КРАНОВЫЕ ПЛОЩАДКИ</a>
+            <a class="menu-item" href="">ВЫГРУЗКА ВАГОНОВ</a>
+            <a class="menu-item" href="">ТОВАРЫ СЕЛЬСКОГО ХОЗЯЙСТВА</a>
+            <a class="menu-item" href="">ФАСОВКА</a>
+            <a class="menu-item" href="">ЩЕБЕНЬ</a>
+        </nav>
+    </div>
+    <header class="header">
+        <div class="header__head">
+            <nav class="menu">
+                <div class="logo">VELES</div>
+                <a class="menu-item menu-item_header" href="">ЗЕМЛЯ</a>
+                <a class="menu-item menu-item_header" href="">КРАНОВЫЕ ПЛОЩАДКИ</a>
+                <a class="menu-item menu-item_header" href="">ВЫГРУЗКА ВАГОНОВ</a>
+                <a class="menu-item menu-item_header" href="">ФАСОВКА</a>
+                <a class="menu-item menu-item_header" href="">ЩЕБЕНЬ</a>
+                <a class="menu-item menu-item_header menu-item_phone" href=""><svg width="9" height="13"
+                        viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.0157563 2.98975C-0.0335586 2.29655 0.121422 1.61371 0.531774 1.0645C0.887529 0.566612 1.35072 0.294697 1.90901 0.135791C2.37924 -0.00261869 2.68745 0.166973 2.82306 0.685638C3.01679 1.46106 3.2933 2.23653 3.39369 3.05299C3.42539 3.41243 3.19115 3.92065 2.93754 4.18239C2.30176 4.80338 2.43385 5.25529 2.91642 6.19517C3.06612 6.49818 3.30388 7.02203 3.76707 7.71543C4.24963 8.41398 4.505 8.78893 5.12493 8.47088C5.81355 8.12719 6.31549 8.34822 6.83503 8.90301C7.18727 9.30368 7.57473 9.64789 7.92696 10.0486C8.43594 10.6444 8.41305 11.0552 8.01502 11.476C7.29823 12.251 6.11472 12.5072 5.23414 11.9882C4.74805 11.7055 4.26373 11.3356 3.87803 10.9041C2.17849 8.98293 0.952711 6.74877 0.214772 4.2273C0.0967725 3.80106 0.0421749 3.36973 0.0157563 2.98975Z"
+                            fill="white" />
+                    </svg>
+                    +7 (927) 678-45-14</a>
+                <div class="address">
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.33331 13.5646C4.33331 13.5646 8.66663 8.47176 8.66663 5.50389C8.66663 2.53603 6.72654 0.66748 4.33331 0.66748C1.94009 0.66748 0 2.53603 0 5.50389C0 8.47176 4.33331 13.5646 4.33331 13.5646ZM4.33331 7.65341C5.82907 7.65341 7.04163 6.45045 7.04163 4.96651C7.04163 3.48258 5.82907 2.27962 4.33331 2.27962C2.83755 2.27962 1.625 3.48258 1.625 4.96651C1.625 6.45045 2.83755 7.65341 4.33331 7.65341Z"
+                            fill="white" />
+                    </svg>
+                    г. Казань, Складская 20
+                </div>
+                <div class="header__mobile-menu" onclick="openMenu()">
+                    <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 17H25M1 1H25H1ZM1 9H25H1Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </nav>
+        </div>
+        <div class="header__purchase-and-picture">
+            <div class="header__purchase">
+                <p class="header__text">выгрузка вагонов, АРЕНДА
+                    ЗЕМЛИ, КРаНОВЫХ ПЛОЩАДОК,
+                    ответственное хранение</p>
+                <form class="header__form"><button class="header__buy">ЗАКАЗАТЬ</button></form>
+            </div>
+            <div class="header__picture">
+                <img class="header__train" src="img/train.png" alt="фотография вагонов">
+            </div>
+        </div>
+        <div class="header__arrows">
+            <svg width="133" height="22" viewBox="0 0 133 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M108 11H132M132 11L129.5 7M132 11L129 14.5" stroke="white" />
+                <path d="M25 11H1M1 11L3.5 7M1 11L4 14.5" stroke="white" />
+                <path
+                    d="M53.308 15.884V17H47.206V15.884H49.762V8.18C49.666 8.324 49.498 8.48 49.258 8.648C49.03 8.816 48.772 8.972 48.484 9.116C48.208 9.26 47.92 9.38 47.62 9.476C47.32 9.572 47.056 9.62 46.828 9.62V8.432C47.104 8.432 47.404 8.354 47.728 8.198C48.064 8.042 48.376 7.862 48.664 7.658C48.964 7.454 49.216 7.262 49.42 7.082C49.624 6.902 49.738 6.782 49.762 6.722H51.022V15.884H53.308ZM73.243 4.22L64.747 17H63.361L71.857 4.22H73.243ZM89.0881 12.752C89.8801 12.884 90.5101 13.244 90.9781 13.832C91.4581 14.42 91.6981 15.146 91.6981 16.01C91.6981 16.55 91.5961 17.042 91.3921 17.486C91.2001 17.942 90.9181 18.326 90.5461 18.638C90.1861 18.962 89.7481 19.208 89.2321 19.376C88.7281 19.556 88.1641 19.646 87.5401 19.646C86.6281 19.646 85.8301 19.46 85.1461 19.088C84.4621 18.728 83.9461 18.224 83.5981 17.576L84.4441 16.802C84.6961 17.33 85.0801 17.75 85.5961 18.062C86.1121 18.374 86.7601 18.53 87.5401 18.53C88.4401 18.53 89.1481 18.308 89.6641 17.864C90.1801 17.432 90.4381 16.808 90.4381 15.992C90.4381 15.164 90.1681 14.51 89.6281 14.03C89.0881 13.55 88.3081 13.31 87.2881 13.31H86.8381V12.266H87.3241C88.2481 12.266 88.9561 12.056 89.4481 11.636C89.9401 11.204 90.1861 10.646 90.1861 9.962C90.1861 9.602 90.1201 9.284 89.9881 9.008C89.8561 8.732 89.6701 8.504 89.4301 8.324C89.2021 8.132 88.9261 7.988 88.6021 7.892C88.2901 7.796 87.9481 7.748 87.5761 7.748C86.8921 7.748 86.2861 7.904 85.7581 8.216C85.2421 8.516 84.8521 8.936 84.5881 9.476L83.7961 8.72C83.9401 8.408 84.1441 8.126 84.4081 7.874C84.6721 7.61 84.9721 7.388 85.3081 7.208C85.6441 7.028 86.0161 6.89 86.4241 6.794C86.8321 6.686 87.2521 6.632 87.6841 6.632C88.2361 6.632 88.7401 6.71 89.1961 6.866C89.6641 7.022 90.0661 7.244 90.4021 7.532C90.7381 7.808 90.9961 8.144 91.1761 8.54C91.3681 8.936 91.4641 9.374 91.4641 9.854C91.4641 10.214 91.4101 10.562 91.3021 10.898C91.1941 11.222 91.0381 11.516 90.8341 11.78C90.6301 12.032 90.3781 12.248 90.0781 12.428C89.7901 12.596 89.4601 12.704 89.0881 12.752Z"
+                    fill="white" />
+            </svg>
+        </div>
+    </header>
+    <div class="what-we-can">
+        <div class="title">
+            Чем мы можем быть полезны?
+        </div>
+        <div class="what-we-can__columns">
+            <div class="what-we-can__rows">
+                <div class="what-we-can__item"><a href="#map"><img class="what-we-can__map-icon" src="img/map_icon.png"
+                            alt="значок карты"></a><img class="what-we-can__picture" src="img/kranovaya.png"
+                        alt="крановая площадка">
+                    <p class="what-we-can__sign">КРАНОВАЯ ПЛОЩАДКА</p>
+                </div>
+                <div class="what-we-can__item"><img class="what-we-can__picture" src="img/tovari.png"
+                        alt="товары сельского хозяйства">
+                    <p class="what-we-can__sign">ТОВАРЫ СЕЛЬСКОГО ХОЗЯЙСТВА</p>
+                </div>
+                <div class="what-we-can__item"><img class="what-we-can__picture" src="img/fasovka.png" alt="фасовка">
+                    <p class="what-we-can__sign">ФАСОВКА ОТ 300 ГР ДО 1 ТОННЫ</p>
+                </div>
+            </div>
+            <div class="what-we-can__rows">
+                <div class="what-we-can__item"><img class="what-we-can__picture" src="img/granit.png"
+                        alt="гранитный щебень">
+                    <p class="what-we-can__sign">ГРАНИТНЫЙ ЩЕБЕНЬ</p>
+                </div>
+                <div class="what-we-can__item"><img class="what-we-can__picture" src="img/arenda_zemli.png"
+                        alt="аренда земли">
+                    <p class="what-we-can__sign">АРЕНДА ЗЕМЛИ</p>
+                </div>
+                <div class="what-we-can__item"><a href="#map"><img class="what-we-can__map-icon" src="img/map_icon.png"
+                            alt="значок карты"></a> <img class="what-we-can__picture" src="img/arenda_skladov.png"
+                        alt="аренда складов">
+                    <p class="what-we-can__sign">АРЕНДА СКЛАДОВ</p>
+                </div>
+            </div>
+            <div class="what-we-can__rows">
+                <div class="what-we-can__item"><img class="what-we-can__picture" src="img/vigruzka.png"
+                        alt="выгрузка вагонов">
+                    <p class="what-we-can__sign">ВЫГРУЗКА ВАГОНОВ И ОТВЕТСТВЕННОЕ ХРАНЕНИЕ</p>
+                </div>
+                <div class="what-we-can__item"><img class="what-we-can__picture" src="img/avto_vesi.png"
+                        alt="автомобильные весы">
+                    <p class="what-we-can__sign">АВТОМОБИЛЬНЫЕ ВЕСЫ 18M, 80TH</p>
+                </div>
+                <div class="what-we-can__item"><img class="what-we-can__picture" src="img/zhd_vesi.png"
+                        alt="железнодорожные весы">
+                    <p class="what-we-can__sign">ЖЕЛЕЗНОДОРОЖНЫЕ ВЕСЫ НА 2 ВАГОНА</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="our-advantages">
+        <div class="title">Наши преимущества</div>
+        <div class="our-advantages__advantages">
+            <div class="our-advantages__element">
+                <div class="our-advantages__yellow-block">01</div>
+                <div class="our-advantages__description">11,5 га площадь базы</div>
+                <div class="our-advantages__num">1</div>
+            </div>
+            <div class="our-advantages__element">
+                <div class="our-advantages__yellow-block">02</div>
+                <div class="our-advantages__description">2 своих тепловоза</div>
+                <div class="our-advantages__num">2</div>
+            </div>
+            <div class="our-advantages__element">
+                <div class="our-advantages__yellow-block">03</div>
+                <div class="our-advantages__description">Повышенный путь для выгрузки инертных грузов</div>
+                <div class="our-advantages__num">3</div>
+            </div>
+            <div class="our-advantages__element">
+                <div class="our-advantages__yellow-block">04</div>
+                <div class="our-advantages__description">8 км от центра Казани</div>
+                <div class="our-advantages__num">4</div>
+            </div>
+            <div class="our-advantages__element">
+                <div class="our-advantages__yellow-block">05</div>
+                <div class="our-advantages__description">Возможность выгрузки хопров и сыпучих грузов</div>
+                <div class="our-advantages__num">5</div>
+            </div>
+            <div class="our-advantages__element">
+                <div class="our-advantages__yellow-block">06</div>
+                <div class="our-advantages__description">Железнодорожные весы на 2 вагона</div>
+                <div class="our-advantages__num">6</div>
+            </div>
+            <div class="our-advantages__element">
+                <div class="our-advantages__yellow-block">07</div>
+                <div class="our-advantages__description">Автомобильные весы 18 м на 80 тонн</div>
+                <div class="our-advantages__num">7</div>
+            </div>
+            <div class="our-advantages__element">
+                <div class="our-advantages__yellow-block">08</div>
+                <div class="our-advantages__description">3 пандуса для выгрузки и загрузки крытых вагонов и фур</div>
+                <div class="our-advantages__num">8</div>
+            </div>
+            <div class="our-advantages__element">
+                <div class="our-advantages__yellow-block">09</div>
+                <div class="our-advantages__description">Козловой кран</div>
+                <div class="our-advantages__num">9</div>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <a id="map"></a>
+        <div class="title">Карта территорий</div>
+        <img class="map__picture" src="img/map.png" alt="карта">
+    </div>
+    <div class="arenda-zemli">
+        <img class="arenda-zemli__mobile-picture" src="img/zemlya.png" alt="аренда земли">
+        <div class="arenda-zemli__text">
+            <h1 class="text-header">АРЕНДА ЗЕМЛИ</h1>
+            <p class="text-description">Предлагаем в аренду открытые площадки для хранения грузов и техники.
+                Площадь базы составляет 11,5га. Общая протяженность внутренних ж/д путей позволяет производить
+                погрузо-разгрузочные работы до 60 вагонов в сутки единовременно. На базе работают два маневровых
+                собственных тепловоза. Есть железнодорожные и автомобильные весы, козловой кран, повышенный путь,
+                пандусы для выгрузки крытых вагонов и фур.</p>
+            <form class="arenda-zemli__form"><button class="consultation">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+        <div class="arenda-zemli__pictures">
+            <svg class="arenda-zemli__grey-rectangle" width="547" height="487" viewBox="0 0 547 487" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="547" height="487" fill="#F1F2F5" />
+            </svg>
+            <img class="arenda-zemli__zemlya" src="img/zemlya.png" alt="аренда земли">
+        </div>
+    </div>
+    <div class="arenda-skladov">
+        <img class="arenda-skladov__mobile-picture" src="img/warehouse.png" alt="аренда складов">
+        <div class="arenda-skladov__content">
+            <div class="arenda-skladov__text">
+                <h1 class="text-header text-header_white">АРЕНДА СКЛАДОВ</h1>
+                <p class="text-description text-description_white">Предлагаем в аренду крытые и открытые складские и
+                    производственные площадки. Склады комплекса оснащены погрузочно-разгрузочной техникой. Открытые
+                    складские площадки приспособлены и для хранения негабаритных грузов. Собственный ж.д. подъездной
+                    путь. Охраняемая территория, удобные подъездные пути для любых видов транспорта. На закрытой
+                    территории базы обеспечивается функционирование всех инженерных сетей.</p>
+                <form class="arenda-zemli__form"><button class="consultation consultation_white-border">ПОЛУЧИТЬ
+                        КОНСУЛЬТАЦИЮ</button>
+                </form>
+            </div>
+        </div>
+        <img class="arenda-skladov__picture" src="img/warehouse.png" alt="аренда складов">
+    </div>
+    <div class="send-contacts">
+        <div class="title">УЗНАТЬ О ЦЕНАХ, ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ ИЛИ ПЕРСОНАЛЬНОЕ ПРЕДЛОЖЕНИЕ</div>
+        <form class="send-contacts__form">
+            <input class="send-contacts__field" type="text" placeholder="Имя">
+            <input class="send-contacts__field" type="text" placeholder="Телефон">
+            <button class="consultation">ОТПРАВИТЬ</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer__content">
+            <nav class="menu menu_mobile-v">
+                <div class="logo">VELES</div>
+                <a class="menu-item" href="">ЗЕМЛЯ</a>
+                <a class="menu-item" href="">КРАНОВЫЕ ПЛОЩАДКИ</a>
+                <a class="menu-item" href="">ВЫГРУЗКА ВАГОНОВ</a>
+                <a class="menu-item" href="">ТОВАРЫ СЕЛЬСКОГО ХОЗЯЙСТВА</a>
+                <a class="menu-item" href="">ФАСОВКА</a>
+                <a class="menu-item" href="">ЩЕБЕНЬ</a>
+                <a class="menu-item menu-item_phone" href=""><svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.0157563 2.98975C-0.0335586 2.29655 0.121422 1.61371 0.531774 1.0645C0.887529 0.566612 1.35072 0.294697 1.90901 0.135791C2.37924 -0.00261869 2.68745 0.166973 2.82306 0.685638C3.01679 1.46106 3.2933 2.23653 3.39369 3.05299C3.42539 3.41243 3.19115 3.92065 2.93754 4.18239C2.30176 4.80338 2.43385 5.25529 2.91642 6.19517C3.06612 6.49818 3.30388 7.02203 3.76707 7.71543C4.24963 8.41398 4.505 8.78893 5.12493 8.47088C5.81355 8.12719 6.31549 8.34822 6.83503 8.90301C7.18727 9.30368 7.57473 9.64789 7.92696 10.0486C8.43594 10.6444 8.41305 11.0552 8.01502 11.476C7.29823 12.251 6.11472 12.5072 5.23414 11.9882C4.74805 11.7055 4.26373 11.3356 3.87803 10.9041C2.17849 8.98293 0.952711 6.74877 0.214772 4.2273C0.0967725 3.80106 0.0421749 3.36973 0.0157563 2.98975Z"
+                            fill="white" />
+                    </svg>
+                    +7 (927) 678-45-14</a>
+                <div class="address">
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.33331 13.5646C4.33331 13.5646 8.66663 8.47176 8.66663 5.50389C8.66663 2.53603 6.72654 0.66748 4.33331 0.66748C1.94009 0.66748 0 2.53603 0 5.50389C0 8.47176 4.33331 13.5646 4.33331 13.5646ZM4.33331 7.65341C5.82907 7.65341 7.04163 6.45045 7.04163 4.96651C7.04163 3.48258 5.82907 2.27962 4.33331 2.27962C2.83755 2.27962 1.625 3.48258 1.625 4.96651C1.625 6.45045 2.83755 7.65341 4.33331 7.65341Z"
+                            fill="white" />
+                    </svg>
+                    г. Казань, Складская 20
+                </div>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
