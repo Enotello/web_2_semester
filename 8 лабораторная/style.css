@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: salmon;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 2;
+    flex-wrap: wrap;
+}
+.element{
+    order: 2;
+    margin: auto;
+}
+.element_first{
+    order: 1;
+}
