@@ -1,0 +1,31 @@
+//Использование use
+@use 'sass:color';
+//Пример переменной
+$some-font-size: 11px;
+//Модуль map:
+$cool-colors: ("cool-white":#ecf0f1, "normal-white": white, "cool-red": #d43d44);
+
+@mixin block-template {
+    width: 50%;
+    margin: 0 auto;
+}
+.first-block{
+    //Пример миксина
+    @include block-template();
+    //Пример вложенности
+    & > .some-element{
+        //Использование map
+        border: 1px solid map-get($cool-colors, $key: "red");
+        //использование color
+        background-color: lighten(salmon, 10);
+        &__big{
+            //Пример extend
+            @extend .some-element;
+            font-size: 30px;
+        }
+    }
+    & h1{
+        //Пример числового оператора и переменной
+        font-size: ($some-font-size+1)*2;
+    }
+}

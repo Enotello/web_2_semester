@@ -1,0 +1,19 @@
+@use 'sass:color';
+.first-block {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.first-block > .some-element, .first-block > .some-element__big {
+  border: 1px solid;
+  background-color: #fcaca3;
+}
+
+.first-block > .some-element__big {
+  font-size: 30px;
+}
+
+.first-block h1 {
+  font-size: 24px;
+}
+/*# sourceMappingURL=main.css.map */
