@@ -1,9 +1,8 @@
 //Использование use
-@import 'colors';
+@use "./colors" as *;
 @use 'sass:color';
 //Пример переменной
 $some-font-size: 11px;
-
 @mixin block-template {
     width: 50%;
     margin: 0 auto;
@@ -26,5 +25,6 @@ $some-font-size: 11px;
     & h1{
         //Пример числового оператора и переменной
         font-size: ($some-font-size+1)*2;
+        
     }
 }
